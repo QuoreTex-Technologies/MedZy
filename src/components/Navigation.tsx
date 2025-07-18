@@ -44,7 +44,7 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
           </div>
 
           {/* Login Buttons */}
-          <div className="hidden lg:flex items-center space-x-3 xl:space-x-4">
+          {/* <div className="hidden lg:flex items-center space-x-3 xl:space-x-4">
             <button
               onClick={() => onLoginClick('student')}
               className="flex items-center space-x-1 xl:space-x-2 px-3 xl:px-4 py-2 text-[#0c8e95] border border-[#0c8e95] rounded-lg hover:bg-[#0c8e95] hover:text-white transition-colors duration-200 text-sm xl:text-base"
@@ -59,7 +59,7 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
               <UserCheck size={16} />
               <span>Admin Login</span>
             </button>
-          </div>
+          </div> */}
 
           {/* Mobile menu button */}
           <button
@@ -83,7 +83,7 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
                 {item.label}
               </a>
             ))}
-            <div className="pt-4 px-4 space-y-3">
+            {/* <div className="pt-4 px-4 space-y-3">
               <button
                 onClick={() => {
                   onLoginClick('student');
@@ -104,7 +104,7 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
                 <UserCheck size={16} />
                 <span>Admin Login</span>
               </button>
-            </div>
+            </div> */}
           </div>
         )}
       </div>

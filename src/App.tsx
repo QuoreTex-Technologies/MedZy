@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import AdminDashboard from './components/AdminDashboard';
-import StudentDashboard from './components/StudentDashboard';
+// import AdminDashboard from './components/AdminDashboard';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Articles from './components/Articles';
@@ -42,11 +41,6 @@ function App() {
   // Show admin dashboard if admin is logged in
   if (isAdminLoggedIn) {
     return <AdminDashboard onLogout={handleLogout} />;
-  }
-
-  // Show student dashboard if student is logged in
-  if (isStudentLoggedIn) {
-    return <StudentDashboard onLogout={handleLogout} />;
   }
 
   return (
