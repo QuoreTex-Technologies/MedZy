@@ -34,9 +34,9 @@ const TeamSection: React.FC = () => {
       name: "Quoretex",
       role: "Design & AI Integration",
       description: "Responsible for creating intuitive platforms and AI-powered career support tools to guide IMG doctors digitally.",
-      image: "https://images.pexels.com/photos/5452266/5452266-landscape-3000x2000.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      icon: Palette,
-      color: "bg-[#ffd89e]",
+      image: "assets/QTWAI.jpg",
+      icon: "logo",
+    //   color: "bg-[#ffd89e]",
       stats: { designs: "200+ UI/UX Projects", ai: "AI-Powered Tools", awards: "15+ Design Awards" }
     }
   ];
@@ -87,7 +87,11 @@ const TeamSection: React.FC = () => {
                     className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
                   />
                   <div className={`absolute top-4 left-4 ${member.color} rounded-full p-3`}>
-                    <member.icon className="text-white w-6 h-6" />
+                    {member.icon === "logo" ? (
+                      <img src="/assets/qtwbg.png" alt="Logo" className="w-12 h-12 rounded-full object-cover" />
+                    ) : (
+                      <member.icon className="text-white w-6 h-6" />
+                    )}
                   </div>
                 </div>
               </div>

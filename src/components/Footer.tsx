@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
               <img 
-                src="/assets/medzy-logo.jpg" 
+                src="/assets/logoremovebg.png" 
                 alt="MedzyHQ Logo" 
-                className="h-8 w-8 sm:h-10 sm:w-10 rounded-full mr-2 sm:mr-3 object-cover"
+                className="h-10 w-10 sm:h-14 sm:w-14 rounded-full mr-2 sm:mr-3 object-cover"
               />
               <span className="text-xl sm:text-2xl font-bold text-[#0fb8ce]">MedzyHQ</span>
             </div>
@@ -63,23 +63,6 @@ const Footer: React.FC = () => {
             <h3 className="text-base sm:text-lg font-bold mb-4 text-[#0fb8ce]">Platform</h3>
             <ul className="space-y-2">
               {footerLinks.platform.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources Links */}
-          <div>
-            <h3 className="text-base sm:text-lg font-bold mb-4 text-[#0fb8ce]">Resources</h3>
-            <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
