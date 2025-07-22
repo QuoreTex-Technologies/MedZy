@@ -5,10 +5,9 @@ const Footer: React.FC = () => {
   const footerLinks = {
     platform: [
       { label: 'Home', href: '#home' },
-      { label: 'Articles', href: '#articles' },
-      { label: 'Blog', href: '#blog' },
-      { label: 'Community', href: '#community' },
-      { label: 'Feedback', href: '#feedback' }
+      { label: 'About', href: '#about' },
+      { label: 'Team', href: '#team' },
+      { label: '5-Step System', href: '#five-step-system' }
     ],
     resources: [
       { label: 'PLAB Preparation', href: '#' },
@@ -34,14 +33,14 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
               <img 
-                src="/assets/Logo.jpg" 
-                alt="Medzy Logo" 
+                src="/assets/medzy-logo.jpg" 
+                alt="MedzyHQ Logo" 
                 className="h-8 w-8 sm:h-10 sm:w-10 rounded-full mr-2 sm:mr-3 object-cover"
               />
-              <span className="text-xl sm:text-2xl font-bold text-[#0fb8ce]">MEDZY</span>
+              <span className="text-xl sm:text-2xl font-bold text-[#0fb8ce]">MedzyHQ</span>
             </div>
             <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed">
-              Empowering International Medical Graduates to successfully transition to the UK NHS system through comprehensive resources and community support.
+              MedzyHQ guides international doctors through every challenge—from interview prep to relocation—so you can thrive in the UK healthcare system.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-[#0fb8ce] transition-colors duration-200">

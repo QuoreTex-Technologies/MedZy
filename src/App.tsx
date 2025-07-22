@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 // import AdminDashboard from './components/AdminDashboard';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import Articles from './components/Articles';
-import Blog from './components/Blog';
-import Community from './components/Community';
-import Feedback from './components/Feedback';
+// import Articles from './components/Articles';
+// import Blog from './components/Blog';
+// import Community from './components/Community';
+// import Feedback from './components/Feedback';
+import AboutUs from './components/AboutUs';
+import TeamSection from './components/TeamSection';
+import FiveStepSystem from './components/FiveStepSystem';
+
 import LoginModal from './components/LoginModal';
 import Footer from './components/Footer';
 
@@ -47,10 +51,13 @@ function App() {
     <div className="min-h-screen bg-white">
       <Navigation onLoginClick={handleLoginClick} />
       <Hero />
-      <Articles />
+      {/* <Articles />
       <Blog />
       <Community />
-      <Feedback />
+      <Feedback /> */}
+      <AboutUs/>
+      <TeamSection/>
+      <FiveStepSystem />
       <Footer />
       <LoginModal 
         isOpen={isLoginModalOpen} 

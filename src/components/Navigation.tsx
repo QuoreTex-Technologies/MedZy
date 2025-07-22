@@ -10,10 +10,9 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
 
   const navItems = [
     { label: 'Home', href: '#home' },
-    { label: 'Articles', href: '#articles' },
-    { label: 'Blog', href: '#blog' },
-    { label: 'Community', href: '#community' },
-    { label: 'Feedback', href: '#feedback' },
+    { label: 'About', href: '#about' },
+    { label: 'Team', href: '#team' },
+    { label: '5-Step System', href: '#five-step-system' },
   ];
 
   return (
@@ -22,12 +21,12 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img
+            <img 
               src="/assets/logoremovebg.png" 
-              alt="Medzy Logo" 
-                  className="h-16 w-13 sm:h-13 sm:w-12 rounded-full mr-2 sm:mr-3 object-cover"
+              alt="MedzyHQ Logo" 
+              className="h-8 w-8 sm:h-14 sm:w-14 rounded-full mr-2 sm:mr-3 object-cover"
             />
-            <span className="text-lg sm:text-xl font-bold text-[#0c8e95]">MEDZY</span>
+            <span className="text-lg sm:text-xl font-bold text-[#0c8e95]">MedzyHQ</span>
           </div>
 
           {/* Desktop Navigation */}
