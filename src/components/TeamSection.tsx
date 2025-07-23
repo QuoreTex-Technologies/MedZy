@@ -34,7 +34,7 @@ const TeamSection: React.FC = () => {
       name: "Quoretex",
       role: "Design & AI Integration",
       description: "Responsible for creating intuitive platforms and AI-powered career support tools to guide IMG doctors digitally.",
-      image: "assets/QTWAI.jpg",
+      image: "assets/qtpromo.png",
       icon: "logo",
     //   color: "bg-[#ffd89e]",
       stats: { designs: "200+ UI/UX Projects", ai: "AI-Powered Tools", awards: "15+ Design Awards" }

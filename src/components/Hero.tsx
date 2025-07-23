@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
             <br />
             <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">We've Got Your Back</span>
           </h1>
-          <p className="text-xl sm:text-2xl md:text-3xl mb-8 leading-relaxed max-w-4xl mx-auto opacity-90">
+          <p className="text-base sm:text-lg  md:text-xl mb-8 leading-relaxed max-w-4xl mx-auto opacity-90">
             MedzyHQ guides international doctors through every challenge—from interview prep to relocation—so you can thrive in the UK healthcare system.
           </p>
         </div>

@@ -510,7 +510,7 @@
 //         <div className="p-6 border-b border-gray-200">
 //           <div className="flex items-center">
 //             <img 
-//               src="/assets/Logo.jpg" 
+//               src="/assets/medzycircle.jpg" 
 //               alt="Medzy Logo" 
 //               className="h-10 w-10 rounded-full mr-3 object-cover"
 //             />

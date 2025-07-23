@@ -32,11 +32,15 @@ const Footer: React.FC = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
+             
+             
               <img 
-                src="/assets/logoremovebg.png" 
+                src="/assets/medzycircle.jpg" 
                 alt="MedzyHQ Logo" 
                 className="h-10 w-10 sm:h-14 sm:w-14 rounded-full mr-2 sm:mr-3 object-cover"
               />
+
+
               <span className="text-xl sm:text-2xl font-bold text-[#0fb8ce]">MedzyHQ</span>
             </div>
             <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed">

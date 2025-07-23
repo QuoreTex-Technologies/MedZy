@@ -22,7 +22,7 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/assets/logoremovebg.png" 
+              src="/assets/medzycircle.jpg" 
               alt="MedzyHQ Logo" 
               className="h-8 w-8 sm:h-14 sm:w-14 rounded-full mr-2 sm:mr-3 object-cover"
             />
