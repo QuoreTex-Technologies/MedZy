@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       
       <div className="absolute inset-0 w-full h-full">
         <video
-          src="/assets/HomeBG2.mp4"
+          src="/assets/HomeBG.mp4"
           autoPlay
           loop
           muted
