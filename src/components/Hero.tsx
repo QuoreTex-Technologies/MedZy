@@ -5,9 +5,10 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
       {/* Video Background */}
+      
       <div className="absolute inset-0 w-full h-full">
         <video
-          src="/assets/homevid.mp4"
+          src="/assets/HomeBG2.mp4"
           autoPlay
           loop
           muted

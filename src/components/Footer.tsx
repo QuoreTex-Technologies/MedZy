@@ -47,16 +47,10 @@ const Footer: React.FC = () => {
               MedzyHQ guides international doctors through every challenge—from interview prep to relocation—so you can thrive in the UK healthcare system.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-[#0fb8ce] transition-colors duration-200">
-                <Facebook size={20} />
+              <a href="https://www.instagram.com/medzy.hq/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0fb8ce] transition-colors duration-200">
+                <Instagram  size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#0fb8ce] transition-colors duration-200">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#0fb8ce] transition-colors duration-200">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#0fb8ce] transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/medzy-hq-089b50376/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0fb8ce] transition-colors duration-200">
                 <Linkedin size={20} />
               </a>
             </div>
