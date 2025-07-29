@@ -5,7 +5,7 @@ const AboutUs: React.FC = () => {
   const goals = [
     {
       icon: Users,
-      title: "Help 10,000+ IMG doctors enter the NHS by 2027",
+      title: "“Helping IMG doctors achieve success in the NHS.",
       description: "Our ambitious target to support international medical graduates"
     },
     {
@@ -44,7 +44,7 @@ const AboutUs: React.FC = () => {
     {
       icon: TrendingUp,
       title: "Support Beyond the Job",
-      description: "Comprehensive care throughout your career"
+      description: "Comprehensive support throughout your career"
     }
   ];
 
@@ -61,7 +61,7 @@ const AboutUs: React.FC = () => {
               At MedzyHQ, we understand the journey of an International Medical Graduate is more than just exams and interviews. It's about belonging, support, and a smooth transition into the NHS workforce.
             </p>
             <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
-              Our founders—experienced IMG doctors themselves—built this platform to eliminate confusion, isolation, and burnout. Our mission is to walk with you, step by step, until you're confident and settled in your NHS career.
+              Our founders experienced IMG doctors themselves built this platform to eliminate confusion, isolation, and burnout. Our mission is to walk with you, step by step, until you're confident and settled in your NHS career.
             </p>
             <p className="text-lg sm:text-xl text-gray-700 font-medium">
               We use a proven 5-Step Support Model to ensure no doctor walks this path alone.
@@ -69,12 +69,32 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
 
+        {/* Background Video Section */}
+        <div className="flex justify-center mb-16">
+          <video
+            src="/assets/HomeBG.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="rounded-2xl shadow-lg w-full max-w-4xl object-contain h-64 sm:h-80 md:h-96"
+          />
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+        <p className="text-lg sm:text-xl text-gray-700 font-medium mb-6 leading-relaxed text-center">
+        Create an IMG community to help and support each other.
+            </p>
+            </div>
+
         {/* Vision and Mission */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div className="bg-gradient-to-br from-[#0c8e95] to-[#0fb8ce] rounded-2xl p-8 text-white">
             <div className="flex items-center mb-6">
               <Target className="w-12 h-12 mr-4" />
+              
               <h3 className="text-2xl sm:text-3xl font-bold">Our Vision</h3>
+              
             </div>
             <p className="text-lg leading-relaxed">
               To become the most trusted bridge for international doctors entering the UK healthcare system—ensuring every IMG not only survives but thrives.
@@ -135,7 +155,7 @@ const AboutUs: React.FC = () => {
           </h3>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <button className="px-8 py-4 bg-[#0c8e95] text-white rounded-lg hover:bg-[#0a7a80] transition-colors duration-200 font-medium text-lg">
-              Join MedzyHQ Today
+            Join our next seminar/webinar.”
             </button>
             <button className="px-8 py-4 border-2 border-[#0c8e95] text-[#0c8e95] rounded-lg hover:bg-[#0c8e95] hover:text-white transition-colors duration-200 font-medium text-lg">
               Book 1:1 Career Planning Session

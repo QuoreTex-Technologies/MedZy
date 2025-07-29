@@ -21,6 +21,7 @@ const TeamSection: React.FC = () => {
       color: "bg-[#f96331]",
       stats: { experience: "6+ Years Coaching", success: "95% Success Rate", interviews: "1000+ Mock Sessions" }
     },
+    // Move Medicforce Team and Quoretex below
     {
       name: "Medicforce Team",
       role: "Tech Implementation & Digital Onboarding",
@@ -36,7 +37,7 @@ const TeamSection: React.FC = () => {
       description: "Responsible for creating intuitive platforms and AI-powered career support tools to guide IMG doctors digitally.",
       image: "assets/qtpromo.png",
       icon: "logo",
-    //   color: "bg-[#ffd89e]",
+      //   color: "bg-[#ffd89e]",
       stats: { designs: "200+ UI/UX Projects", ai: "AI-Powered Tools", awards: "15+ Design Awards" }
     }
   ];
@@ -54,72 +55,22 @@ const TeamSection: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0c8e95] mb-4">
-            Our Champions Behind MedzyHQ
+            Team
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Meet the dedicated professionals who make your NHS journey possible
+            {/* You can add a subtitle here if needed */}
           </p>
         </div>
 
-        {/* Team Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {teamStats.map((stat, index) => (
-            <div key={index} className="text-center bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center justify-center w-12 h-12 bg-[#0c8e95] bg-opacity-10 rounded-full mx-auto mb-3">
-                <stat.icon className="text-[#0c8e95] w-6 h-6" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-1">{stat.value}</h3>
-              <p className="text-gray-600 text-sm">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Team Members */}
-        <div className="space-y-12">
+        {/* Team Members (Card Grid) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 lg:gap-12`}>
-              {/* Image */}
-              <div className="w-full lg:w-1/2">
-                <div className="relative">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
-                  />
-                  <div className={`absolute top-4 left-4 ${member.color} rounded-full p-3`}>
-                    {member.icon === "logo" ? (
-                      <img src="/assets/qtwbg.png" alt="Logo" className="w-12 h-12 rounded-full object-cover" />
-                    ) : (
-                      <member.icon className="text-white w-6 h-6" />
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="w-full lg:w-1/2">
-                <div className="bg-gray-50 rounded-2xl p-6 sm:p-8">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-[#0c8e95] font-medium mb-4 text-lg">
-                    {member.role}
-                  </p>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    {member.description}
-                  </p>
-
-                  {/* Stats */}
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    {Object.entries(member.stats).map(([key, value], statIndex) => (
-                      <div key={statIndex} className="text-center bg-white rounded-lg p-4">
-                        <p className="text-lg font-bold text-gray-800">{value}</p>
-                        <p className="text-sm text-gray-600 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+            <div key={index} className="bg-white shadow-md rounded-xl p-6 text-left">
+              <h3 className="text-2xl font-bold text-gray-800 mb-1">{member.name}</h3>
+              <p className="text-[#0c8e95] font-semibold mb-2 text-base">
+                {member.role}
+              </p>
+              <p className="text-gray-700 text-sm leading-relaxed">{member.description}</p>
             </div>
           ))}
         </div>
@@ -127,11 +78,11 @@ const TeamSection: React.FC = () => {
         {/* Call to Action */}
         <div className="text-center mt-16 bg-gradient-to-r from-[#0c8e95] to-[#0fb8ce] rounded-2xl p-8 sm:p-12 text-white">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-            Ready to Work with Our Expert Team?
+          “Consult with our experts.
           </h3>
-          <p className="text-lg sm:text-xl mb-8 opacity-90">
+          {/* <p className="text-lg sm:text-xl mb-8 opacity-90">
             Get personalized guidance from professionals who understand your journey
-          </p>
+          </p> */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <button className="px-8 py-3 bg-white text-[#0c8e95] rounded-lg hover:bg-gray-100 transition-colors duration-200 font-medium">
               Schedule Consultation

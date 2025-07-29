@@ -1,16 +1,19 @@
 import React from 'react';
 import { Search, MessageSquare, Home, Briefcase, Heart, CheckCircle, ArrowRight } from 'lucide-react';
+import RegistrationForm from './RegistrationForm';
 
 const FiveStepSystem: React.FC = () => {
+  const [modalOpen, setModalOpen] = React.useState(false);
+  const [activeStep, setActiveStep] = React.useState<any>(null);
+
   const steps = [
     {
       number: 1,
       title: "Job Application",
-      description: "Tailored NHS job matching, guidance on applying, and how to stand out.",
+      description: "Tailored guidance on applying, interview preparation, and standing out inyour NHS journey.",
       icon: Search,
       color: "bg-[#0c8e95]",
       features: [
-        "NHS job matching based on your specialty",
         "Application guidance and optimization",
         "Stand-out strategies for competitive positions",
         "Document preparation and review"
@@ -63,12 +66,21 @@ const FiveStepSystem: React.FC = () => {
       color: "bg-[#e74c3c]",
       features: [
         "Mental wellness workshops",
-        "Regular one-on-one check-ins",
         "Access to wellness resources",
         "Stress management techniques"
       ]
     }
   ];
+
+  const handleOpenModal = (step: any) => {
+    setActiveStep(step);
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+    setActiveStep(null);
+  };
 
   return (
     <section id="five-step-system" className="py-20 bg-gray-50">
@@ -126,6 +138,15 @@ const FiveStepSystem: React.FC = () => {
                       </div>
                     ))}
                   </div>
+                  {/* Register/Enquire Button */}
+                  <div className="mt-8 text-center">
+                    <button
+                      className="px-6 py-2 bg-[#0c8e95] text-white rounded-lg hover:bg-[#0fb8ce] transition-colors font-semibold shadow"
+                      onClick={() => handleOpenModal(step)}
+                    >
+                       Enquire
+                    </button>
+                  </div>
                   
                   {/* Progress Indicator */}
                   <div className="mt-6 pt-6 border-t border-gray-200">
@@ -148,6 +169,37 @@ const FiveStepSystem: React.FC = () => {
             </div>
           ))}
         </div>
+        {/* Modal Pop-up */}
+        {modalOpen && activeStep && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
+            <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate-fadeIn">
+              <button
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl font-bold"
+                onClick={handleCloseModal}
+                aria-label="Close"
+              >
+                &times;
+              </button>
+              <div className="flex items-center mb-4">
+                <div className={`w-12 h-12 ${activeStep.color} rounded-full flex items-center justify-center mr-4`}>
+                  <activeStep.icon className="text-white w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#0c8e95]">{activeStep.title}</h3>
+                  <p className="text-gray-600 text-sm">Step {activeStep.number}</p>
+                </div>
+              </div>
+              <p className="mb-4 text-gray-700">{activeStep.description}</p>
+              <ul className="mb-6 list-disc list-inside text-gray-600">
+                {activeStep.features.map((feature: string, idx: number) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
+              <h4 className="text-lg font-semibold mb-2 text-[#0c8e95]">Register / Enquire</h4>
+              <RegistrationForm />
+            </div>
+          </div>
+        )}
 
         {/* Process Flow */}
         <div className="mt-20">
@@ -185,7 +237,7 @@ const FiveStepSystem: React.FC = () => {
               Start Your Journey Today
             </button>
             <button className="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#0c8e95] transition-colors duration-200 font-medium">
-              Download Complete Guide
+              Download Free Guide
             </button>
           </div>
         </div>
