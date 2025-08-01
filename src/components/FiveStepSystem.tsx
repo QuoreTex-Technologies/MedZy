@@ -10,7 +10,7 @@ const FiveStepSystem: React.FC = () => {
     {
       number: 1,
       title: "Job Application",
-      description: "Tailored guidance on applying, interview preparation, and standing out inyour NHS journey.",
+      description: "Tailored guidance on applying, interview preparation, and standing out in your NHS journey.",
       icon: Search,
       color: "bg-[#0c8e95]",
       features: [
@@ -28,7 +28,7 @@ const FiveStepSystem: React.FC = () => {
       features: [
         "Comprehensive mock interview sessions",
         "Clinical scenario practice",
-        "Confidence building techniques",
+        "Confidence-building techniques",
         "NHS-specific interview strategies"
       ]
     },
@@ -61,7 +61,7 @@ const FiveStepSystem: React.FC = () => {
     {
       number: 5,
       title: "Mental Health Support",
-      description: "Workshops, one-on-one check-ins, and access to wellness resources.",
+      description: "Workshops, and access to wellness resources are available.",
       icon: Heart,
       color: "bg-[#e74c3c]",
       features: [

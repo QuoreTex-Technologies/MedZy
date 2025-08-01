@@ -2,7 +2,7 @@ import React from 'react';
 import { Users, Award, Code, Palette, Star, MapPin, Calendar, Trophy } from 'lucide-react';
 
 const TeamSection: React.FC = () => {
-  const teamMembers = [
+  const founders = [
     {
       name: "Dr. Bipin Gaikwad",
       role: "Founder | NHS Doctor | IMG Advocate",
@@ -20,8 +20,10 @@ const TeamSection: React.FC = () => {
       icon: Users,
       color: "bg-[#f96331]",
       stats: { experience: "6+ Years Coaching", success: "95% Success Rate", interviews: "1000+ Mock Sessions" }
-    },
-    // Move Medicforce Team and Quoretex below
+    }
+  ];
+
+  const partners = [
     {
       name: "Medicforce Team",
       role: "Tech Implementation & Digital Onboarding",
@@ -55,30 +57,57 @@ const TeamSection: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0c8e95] mb-4">
-            Team
+            Meet the Founders
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             {/* You can add a subtitle here if needed */}
           </p>
         </div>
 
-        {/* Team Members (Card Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white shadow-md rounded-xl p-6 text-left">
-              <h3 className="text-2xl font-bold text-gray-800 mb-1">{member.name}</h3>
-              <p className="text-[#0c8e95] font-semibold mb-2 text-base">
-                {member.role}
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">{member.description}</p>
-            </div>
-          ))}
+        {/* Meet the Founders Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#0c8e95] mb-4">
+              
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {founders.map((member, index) => (
+              <div key={index} className="bg-white shadow-md rounded-xl p-6 text-left">
+                <h3 className="text-2xl font-bold text-gray-800 mb-1">{member.name}</h3>
+                <p className="text-[#0c8e95] font-semibold mb-2 text-base">
+                  {member.role}
+                </p>
+                <p className="text-gray-700 text-sm leading-relaxed">{member.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* In Collaboration With Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#0c8e95] mb-4">
+              In Collaboration With
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {partners.map((member, index) => (
+              <div key={index} className="bg-white shadow-md rounded-xl p-6 text-left">
+                <h3 className="text-2xl font-bold text-gray-800 mb-1">{member.name}</h3>
+                <p className="text-[#0c8e95] font-semibold mb-2 text-base">
+                  {member.role}
+                </p>
+                <p className="text-gray-700 text-sm leading-relaxed">{member.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Call to Action */}
         <div className="text-center mt-16 bg-gradient-to-r from-[#0c8e95] to-[#0fb8ce] rounded-2xl p-8 sm:p-12 text-white">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-          “Consult with our experts.
+          "Consult with our experts.
           </h3>
           {/* <p className="text-lg sm:text-xl mb-8 opacity-90">
             Get personalized guidance from professionals who understand your journey

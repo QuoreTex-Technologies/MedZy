@@ -58,10 +58,10 @@ const AboutUs: React.FC = () => {
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
-              At MedzyHQ, we understand the journey of an International Medical Graduate is more than just exams and interviews. It's about belonging, support, and a smooth transition into the NHS workforce.
+            At MedzyHQ, we understand that the journey of an International Medical Graduate is more than just exams and interviews. It's about belonging, support, and a smooth transition into the NHS workforce.
             </p>
             <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
-              Our founders experienced IMG doctors themselves built this platform to eliminate confusion, isolation, and burnout. Our mission is to walk with you, step by step, until you're confident and settled in your NHS career.
+            Our founders, who are IMG doctors themselves, built this platform to eliminate confusion, isolation, and burnout. Our mission is to walk with you, step by step, until you're confident and settled in your NHS career.
             </p>
             <p className="text-lg sm:text-xl text-gray-700 font-medium">
               We use a proven 5-Step Support Model to ensure no doctor walks this path alone.
@@ -69,17 +69,7 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
 
-        {/* Background Video Section */}
-        <div className="flex justify-center mb-16">
-          <video
-            src="/assets/HomeBG.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="rounded-2xl shadow-lg w-full max-w-4xl object-contain h-64 sm:h-80 md:h-96"
-          />
-        </div>
+  
 
         <div className="max-w-4xl mx-auto">
         <p className="text-lg sm:text-xl text-gray-700 font-medium mb-6 leading-relaxed text-center">
@@ -97,7 +87,7 @@ const AboutUs: React.FC = () => {
               
             </div>
             <p className="text-lg leading-relaxed">
-              To become the most trusted bridge for international doctors entering the UK healthcare system—ensuring every IMG not only survives but thrives.
+              To become the most trusted bridge for international doctors entering the UK healthcare system ensuring every IMG not only survives but thrives.
             </p>
           </div>
 
@@ -154,14 +144,14 @@ const AboutUs: React.FC = () => {
             Are you ready to transform your NHS journey?
           </h3>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="px-8 py-4 bg-[#0c8e95] text-white rounded-lg hover:bg-[#0a7a80] transition-colors duration-200 font-medium text-lg">
-            Join our next seminar/webinar.”
-            </button>
-            <button className="px-8 py-4 border-2 border-[#0c8e95] text-[#0c8e95] rounded-lg hover:bg-[#0c8e95] hover:text-white transition-colors duration-200 font-medium text-lg">
-              Book 1:1 Career Planning Session
-            </button>
+            {/* <button className="px-8 py-4 bg-[#0c8e95] text-white rounded-lg hover:bg-[#0a7a80] transition-colors duration-200 font-medium text-lg">
+            Book 1:1 Career Planning Session 
+            </button> */}
+            {/* <button className="px-8 py-4 border-2 border-[#0c8e95] text-[#0c8e95] rounded-lg hover:bg-[#0c8e95] hover:text-white transition-colors duration-200 font-medium text-lg">
+            Download 5-Step Success Guide   
+            </button> */}
             <button className="px-8 py-4 bg-[#f96331] text-white rounded-lg hover:bg-[#e55a2b] transition-colors duration-200 font-medium text-lg">
-              Download 5-Step Success Guide
+                     Join our next seminar/webinar.”
             </button>
           </div>
         </div>
