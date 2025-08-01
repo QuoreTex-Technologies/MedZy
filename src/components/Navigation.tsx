@@ -19,24 +19,15 @@ const Navigation: React.FC<NavigationProps> = ({ onLoginClick }) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo + Brand */}
+          {/* Logo */}
           <div className="flex items-center">
             <img 
               src="/assets/logoremovebg.png" 
               alt="MedzyHQ Logo" 
-              className="h-12 sm:h-14 lg:h-16 w-auto rounded-full mr-3 sm:mr-4 object-contain"
+              className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 rounded-full mr-3 sm:mr-4 object-cover"
             />
-            <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0c8e95]">
-              MedzyHQ
-            </span>
+            <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0c8e95]">MedzyHQ</span>
           </div>
-  
-          {/* Add your nav links or hamburger menu here */}
-        </div>
-      </div>
-    </nav>
-  );
-  
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
