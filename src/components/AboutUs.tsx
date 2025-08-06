@@ -151,7 +151,7 @@ const AboutUs: React.FC = () => {
             Download 5-Step Success Guide   
             </button> */}
             <button className="px-8 py-4 bg-[#f96331] text-white rounded-lg hover:bg-[#e55a2b] transition-colors duration-200 font-medium text-lg">
-                     Join our next seminar/webinar.”
+                     Join our next webinar.
             </button>
           </div>
         </div>

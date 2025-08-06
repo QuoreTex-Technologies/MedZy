@@ -107,7 +107,7 @@ const TeamSection: React.FC = () => {
         {/* Call to Action */}
         <div className="text-center mt-16 bg-gradient-to-r from-[#0c8e95] to-[#0fb8ce] rounded-2xl p-8 sm:p-12 text-white">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-          "Consult with our experts.
+          Consult with our experts.
           </h3>
           {/* <p className="text-lg sm:text-xl mb-8 opacity-90">
             Get personalized guidance from professionals who understand your journey
